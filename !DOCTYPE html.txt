@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Donate w BIO Sigmy</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: transparent;
+      overflow: hidden;
+    }
+
+    .scrolling-text {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .text-loop {
+      display: flex;
+      animation: scrollLeft 10s linear infinite;
+    }
+
+    .text-loop span {
+      white-space: nowrap;
+      font-size: 4em;
+      font-family: Impact, 'Arial Black', sans-serif;
+      color: #FFD700;
+      margin-right: 40px;
+      text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000,
+         0px  0px 5px #000;
+    }
+
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scrolling-text">
+    <div class="text-loop">
+      <span>Donate w BIO Sigmy</span>
+      <span>Donate w BIO Sigmy</span>
+      <span>Donate w BIO Sigmy</span>
+      <span>Donate w BIO Sigmy</span>
+    </div>
+  </div>
+</body>
+</html>
